@@ -1,12 +1,12 @@
 let form = document.getElementById('addForm');
-let itemList = document.getElementById('items');
+let contactList = document.getElementById('items');
 let filter = document.getElementById('filter');
 
 // Form submit event
 form.addEventListener('submit', addItem);
 // Delete event
-itemList.addEventListener('click', removeShowItem);
-itemList.addEventListener('mouseout', hideDetails);
+contactList.addEventListener('click', removeShowItem);
+contactList.addEventListener('mouseout', hideDetails);
 // Filter event
 filter.addEventListener('keyup', filterItems);
 
@@ -61,7 +61,7 @@ function addItem(e) {
     a.appendChild(li);
 
     // Append li to list
-    itemList.appendChild(a);
+    contactList.appendChild(a);
 }
 
 // Remove and show item
@@ -70,7 +70,7 @@ function removeShowItem(e) {
     if (e.target.classList.contains('delete')) {
         if (confirm('Are You Sure you want to delete this contact?')) {
             let li = e.target.parentElement.parentElement;
-            itemList.removeChild(li);
+            contactList.removeChild(li);
         }
     }
 
@@ -96,7 +96,7 @@ function filterItems(e) {
     // convert text to lowercase
     let text = e.target.value.toLowerCase();
     // Get list
-    let items = itemList.getElementsByTagName('li');
+    let items = contactList.getElementsByTagName('li');
     // Convert to an array
     Array.from(items).forEach(function (item) {
         let itemName = item.firstChild.textContent;
