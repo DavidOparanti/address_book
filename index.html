@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="David Oparanti">
+    <title>ADDRESS BOOK</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+<body>
+    <header id="main-header" class="bg-dark text-white p-4 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 id="header-title">ADRESS BOOK</h1>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <input type="text" class="form-control" id="filter" placeholder="Search contact...">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="main" class="card card-body">
+            <h2 class="title">Add Contact</h2>
+            <form id="addForm" class="form-inline mb-3">
+                <input type="text" class="form-control mr-2" id="nam" placeholder="Names" required>
+                <input type="number" class="form-control mr-2" id="phone" placeholder="Phone Number" required>
+                <input type="email" class="form-control mr-2" id="email" placeholder="Email" required>
+                <input type="submit" class="btn btn-dark" value="Add>>>">
+            </form>
+            <h2 class="title">Contacts</h2>
+            <ul id="items" class="list-group">
+                <a href="#">
+                    <li class="list-group-item show">David Oparanti
+                        <ul class="dir">
+                            <li id="phone">08169805469</li>
+                            <li id="email">david@gmail.com</li>
+                        </ul> 
+                        <button class="btn btn-dark btn-sm float-right delete">X</button>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="list-group-item show">Daniel Wood
+                        <ul class="dir">
+                            <li id="phone">08169805469</li>
+                            <li id="email">danielwood@gmail.com</li>
+                        </ul>
+                        <button class="btn btn-dark btn-sm float-right delete">X</button>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="list-group-item show">Eric Freez
+                        <ul class="dir">
+                            <li id="phone">08169805469</li>
+                            <li id="email">erickfreez@gmail.com</li>
+                        </ul>
+                        <button class="btn btn-dark btn-sm float-right delete">X</button>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="list-group-item show">Smith Smarth
+                        <ul class="dir">
+                            <li id="phone">08169234566</li>
+                            <li id="email">smittssgmail.com</li>
+                        </ul>
+                        <button class="btn btn-dark btn-sm float-right delete">X</button>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="list-group-item show">Cokker Mars
+                        <ul class="dir">
+                            <li id="phone">08164775469</li>
+                            <li id="email">marscokk@gmail.com</li>
+                        </ul>
+                        <button class="btn btn-dark btn-sm float-right delete">X</button>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <footer id="footer" class="bg-dark text-white pt-5 mt-5  ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; David Oparanti ALC 2.0 WEB biginner project 2018. All right reserved. Contact me @ danster8real@gmail.com</p>
+                </div>
+            </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
