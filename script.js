@@ -13,7 +13,6 @@ filter.addEventListener('keyup', filterItems);
 // Add contact
 function addItem(e) {
     e.preventDefault();
-//debugger;
     // Get input value
     let contactName = document.getElementById('nam').value;
     let contactPhone = document.getElementById('phone').value;
@@ -62,6 +61,10 @@ function addItem(e) {
 
     // Append li to list
     contactList.appendChild(a);
+
+    contactName = '';
+    contactEmail = '';
+    contactPhone = '';
 }
 
 // Remove and show item
